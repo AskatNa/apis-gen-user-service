@@ -4,7 +4,7 @@
 // - protoc             v3.21.12
 // source: service/frontend/client/v1/client.proto
 
-package client
+package customer
 
 import (
 	context "context"
@@ -19,12 +19,12 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	CustomerService_Register_FullMethodName     = "/user.service.frontend.client.v1.CustomerService/Register"
-	CustomerService_Login_FullMethodName        = "/user.service.frontend.client.v1.CustomerService/Login"
-	CustomerService_RefreshToken_FullMethodName = "/user.service.frontend.client.v1.CustomerService/RefreshToken"
-	CustomerService_Get_FullMethodName          = "/user.service.frontend.client.v1.CustomerService/Get"
-	CustomerService_Update_FullMethodName       = "/user.service.frontend.client.v1.CustomerService/Update"
-	CustomerService_Delete_FullMethodName       = "/user.service.frontend.client.v1.CustomerService/Delete"
+	CustomerService_Register_FullMethodName     = "/user.service.frontend.customer.v1.CustomerService/Register"
+	CustomerService_Login_FullMethodName        = "/user.service.frontend.customer.v1.CustomerService/Login"
+	CustomerService_RefreshToken_FullMethodName = "/user.service.frontend.customer.v1.CustomerService/RefreshToken"
+	CustomerService_Get_FullMethodName          = "/user.service.frontend.customer.v1.CustomerService/Get"
+	CustomerService_Update_FullMethodName       = "/user.service.frontend.customer.v1.CustomerService/Update"
+	CustomerService_Delete_FullMethodName       = "/user.service.frontend.customer.v1.CustomerService/Delete"
 )
 
 // CustomerServiceClient is the client API for CustomerService service.
@@ -297,7 +297,7 @@ func _CustomerService_Delete_Handler(srv interface{}, ctx context.Context, dec f
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var CustomerService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "user.service.frontend.client.v1.CustomerService",
+	ServiceName: "user.service.frontend.customer.v1.CustomerService",
 	HandlerType: (*CustomerServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
